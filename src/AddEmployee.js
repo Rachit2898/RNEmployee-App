@@ -30,7 +30,6 @@ export default function AddEmployeeScreen({ navigation }) {
 
   const saveEmployee = async () => {
     if (!firstName || !lastName || !jobTitle || !salary) {
-      // Show an alert if any field is empty
       Alert.alert("Error", "Please fill in all fields.");
       return;
     }
@@ -101,7 +100,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: "#f0f0f0", // Light gray background
+    backgroundColor: "#f0f0f0",
   },
   heading: {
     fontSize: 20,
@@ -112,7 +111,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    borderColor: "green", // Green border color
+    borderColor: "green",
     borderWidth: 1,
     marginBottom: 12,
     paddingHorizontal: 8,
